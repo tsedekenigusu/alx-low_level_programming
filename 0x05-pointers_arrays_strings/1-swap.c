@@ -1,15 +1,15 @@
 #include "holberton.h"
 
 /**
- * swap_int - check the code for Holberton School students.
- * @a: variable.
- * @b: variable
+ * swap_int - swaps the values pointed to by arguments
+ *
+ *@a: pointer argument 1
+ *@b: pointer argument 2
  */
-
 void swap_int(int *a, int *b)
 {
-  int temp;
-  temp = *b;
-  *b = *a;
-  *a = temp;
+	int con = *a;
+
+	*a = *b;
+	*b = con;
 }

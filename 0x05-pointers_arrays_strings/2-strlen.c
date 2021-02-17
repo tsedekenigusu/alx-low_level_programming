@@ -1,17 +1,17 @@
-#tring.h>
+#include "holberton.h"
 
 /**
- * _strlen - check the code for Holberton School students.
- * @s: variable.
+ * _strlen - return the length of a given string
  *
- *Return: the lenght of the string
+ * @s: pointer to string to work on
+ * Return: string
  */
 int _strlen(char *s)
 {
-  int i;
-  for (i = 0; s[i] != '\0'; i++)
-    {
-      continue;
-    }
-  return (i);
+	int len = 0;
+
+	while (*(s + len) != '\0')
+		len++;
+
+	return (len);
 }
